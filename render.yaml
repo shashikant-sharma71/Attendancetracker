@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: attendance-manager
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn Attendance_Manager.wsgi:application

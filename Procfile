@@ -1,0 +1,1 @@
+web: gunicorn Attendance_Manager.wsgi:application
